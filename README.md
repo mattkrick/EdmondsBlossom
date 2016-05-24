@@ -23,6 +23,6 @@ Let's assume I own a store & only sell items in groups of two.
 - If I sell a PENCIL and a MARBLE , I earn $2
 - If I sell a RULER and an ERASER, I earn $2
 
-Each customer is willing to buy up to 1 item of each & I want to maximize profit. Therefore, selling #1 AND #2 is illegal because that would be 2 pencils. #1 AND #3 would is also illegal due to the erasers. So, legal moves are: only #1, only #2, only #3, or #2 AND #3. Since the last option has a profit of $5, I should do that.
+Each customer is willing to buy up to 1 item of each & I want to maximize profit. Therefore, selling #1 AND #2 is illegal because that would be 2 pencils. #1 AND #3 would is also illegal due to the erasers. So, legal moves are: only #1, only #2, only #3, or #2 AND #3. Since the last option has a profit of $4, I should do that.
 
 
