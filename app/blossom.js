@@ -266,12 +266,12 @@ Edmonds.prototype.addBlossom = function (base, k) {
   var bb = this.inBlossom[base];
   var bv = this.inBlossom[v];
   var bw = this.inBlossom[w];
-  b = this.unusedBlossoms.pop();
+  var b = this.unusedBlossoms.pop();
   //console.log('DEBUG: addBlossom(' + base + ',' + k + ')' + ' (v=' + v + ' w=' + w + ')' + ' -> ' + b);
   this.blossomBase[b] = base;
   this.blossomParent[b] = -1;
   this.blossomParent[bb] = b;
-  path = this.blossomChilds[b] = [];
+  var path = this.blossomChilds[b] = [];
   var endPs = this.blossomEndPs[b] = [];
   while (bv !== bb) {
     this.blossomParent[bv] = b;
@@ -377,7 +377,7 @@ Edmonds.prototype.expandBlossom = function (b, endStage) {
     } else {
       var leaves = this.blossomLeaves(s);
       for (var jj = 0; jj < leaves.length; jj++) {
-        v = leaves[jj];
+        var v = leaves[jj];
         this.inBlossom[v] = s;
       }
     }
